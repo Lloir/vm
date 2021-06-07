@@ -7,7 +7,7 @@ SCRIPT_NAME="Bitwarden RS"
 SCRIPT_EXPLAINER="Bitwarden RS is an unofficial Bitwarden server API implementation in Rust.
 It has less hardware requirements and therefore runs on nearly any hardware."
 # shellcheck source=lib.sh
-source /var/scripts/fetch_lib.sh || source <(curl -sL https://raw.githubusercontent.com/nextcloud/vm/master/lib.sh)
+source /var/scripts/fetch_lib.sh || source <(curl -sL https://raw.githubusercontent.com/Lloir/vm/master/lib.sh)
 
 # Check for errors + debug code and abort if something isn't right
 # 1 = ON
