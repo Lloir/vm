@@ -9,7 +9,7 @@ SCRIPT_EXPLAINER="This script enables you to add a subdomain to your existing de
 You need to have a deSEC account already configured for this to work. If you don't already have an account configured, please run:
 sudo bash $SCRIPTS/menu.sh --> Server Configuration --> deSEC"
 # shellcheck source=lib.sh
-source /var/scripts/fetch_lib.sh || source <(curl -sL https://raw.githubusercontent.com/nextcloud/vm/master/lib.sh)
+source /var/scripts/fetch_lib.sh || source <(curl -sL https://raw.githubusercontent.com/Lloir/vm/master/lib.sh)
 
 # Check for errors + debug code and abort if something isn't right
 # 1 = ON
