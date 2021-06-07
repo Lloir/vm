@@ -130,17 +130,6 @@ download_script STATIC adduser
 bash $SCRIPTS/adduser.sh "nextcloud_install_production.sh"
 rm -f $SCRIPTS/adduser.sh
 
-# Check distribution and version
-if ! version 20.04 "$DISTRO" 20.04.6
-then
-    msg_box "This script can only be run on Ubuntu 20.04 (server)."
-    exit 1
-fi
-# Use this when Ubuntu 18.04 is deprecated from the function:
-#check_distro_version
-check_universe
-check_multiverse
-
 # Check if key is available
 if ! site_200 "$NCREPO"
 then
